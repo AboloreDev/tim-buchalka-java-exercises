@@ -1,0 +1,30 @@
+public class exercise2 {
+    
+    public static void main(String[] args) {
+        int score = 499;
+        String name = "Fathiu";
+
+        int position = calculateHighScorePosition(score);
+
+        System.out.println(displayHighScorePosition(name, position));
+    }
+
+
+    public static int calculateHighScorePosition(int score) {
+        if (score >= 1000) {
+            return 1;
+        } else if (score >= 500 ) {
+            return 2;
+        } else if (score >= 100) {
+            return 3;
+        } 
+            return 4;
+    }
+
+
+    public static String displayHighScorePosition(String name, int position) {
+        String message = name + " manage to get into position " + position + " on the high score list";
+
+        return message;
+    }
+}
