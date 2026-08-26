@@ -10,10 +10,11 @@ public class Exercise11 {
     //             System.out.println(value);
     //        }
         
-       boolean data = isPrime(997);
-       System.out.println(data);
+    //    boolean data = isPrime(997);
+    //    System.out.println(data);
 
-       primeCounter();
+    //    primeCounter();
+       sumOfThreeAndFive();
         
     }
 
@@ -49,5 +50,26 @@ public class Exercise11 {
         System.out.println("Total Prime number found is " + counter);
         System.out.println("Operation done");
         return counter;
+    }
+
+    public static int sumOfThreeAndFive() {
+        int sum = 0;
+        int count = 0;
+
+        for (int i = 1; i <= 1000; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                sum = sum + i;
+                count++;
+                String message = "Found one number " + i;
+                System.out.println(message);
+                if (count == 5) {
+                    break;
+                }
+            }
+        }
+
+        System.out.println("Total sum of numbers divisible by 3 and 5 after 5 loops is " + sum);
+        System.out.println("Exiting loop");
+        return sum;
     }
 }
