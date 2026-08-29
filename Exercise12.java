@@ -3,6 +3,7 @@ public class Exercise12 {
 
     public static void main(String[] args) {
         int number = 5;
+
         boolean result = isEvenNumber(number);
         System.out.println(result);
 
@@ -32,7 +33,7 @@ public class Exercise12 {
 
     }
 
-    public boolean isOdd(int number) {
+    public static boolean isOdd(int number) {
         if (number < 0) {
             return false;
         }
