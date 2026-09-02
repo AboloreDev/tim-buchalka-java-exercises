@@ -1,6 +1,6 @@
 package iot;
 
-public class SmartKitchen extends Kitchen {
+public class SmartKitchen {
 
     private CoffeeMaker brewMaster;
     private DishWasher dishWasher;
